@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E44AF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:fontFamily="sans-serif-black"
+        android:text="Examen de Admisión Untels 2023-I"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        tools:text="@string/tituloo" />
+
+    <TextView
+        android:id="@+id/nomape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:text="Apellidos y Nombres:"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        tools:text="@string/nom_ape" />
+
+    <TextView
+        android:id="@+id/correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Correo Electrónico:"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="@+id/nomape"
+        app:layout_constraintTop_toBottomOf="@+id/nomape"
+        tools:text="@string/correo_el" />
+
+    <TextView
+        android:id="@+id/clave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/clave_e"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="@+id/correo"
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+    <TextView
+        android:id="@+id/fechanaci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/fecha_naci"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="@+id/clave"
+        app:layout_constraintTop_toBottomOf="@+id/clave" />
+
+    <TextView
+        android:id="@+id/carrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/carrera_e"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="@+id/fechanaci"
+        app:layout_constraintTop_toBottomOf="@+id/fechanaci" />
+
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/pregunta_e"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintStart_toStartOf="@+id/carrera"
+        app:layout_constraintTop_toBottomOf="@+id/carrera" />
+
+    <EditText
+        android:id="@+id/textnomape"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/text_nomape"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/nomape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nomape" />
+
+    <EditText
+        android:id="@+id/textcorreo"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/text_correo"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/correo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/correo" />
+
+    <EditText
+        android:id="@+id/textclave"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/clave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/clave"
+        tools:text="@string/text_clave" />
+
+    <EditText
+        android:id="@+id/textfecha"
+        android:layout_width="190dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/fechanaci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fechanaci"
+        tools:text="@string/text_fecha" />
+
+    <RadioGroup
+        android:id="@+id/buttonscarreras"
+        android:layout_width="233dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/carrera"
+        app:layout_constraintTop_toBottomOf="@+id/carrera">
+
+        <RadioButton
+            android:id="@+id/radioSI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_SI"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioIA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_IA"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioIM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_IM"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioAD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_AD"
+            android:textColor="@color/white" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkradio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/check_radio"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/pregunta"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta" />
+
+    <CheckBox
+        android:id="@+id/checkinternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/check_internet"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/checkradio"
+        app:layout_constraintTop_toBottomOf="@+id/checkradio" />
+
+    <CheckBox
+        android:id="@+id/checkamigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="CheckBox"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/checkradio"
+        app:layout_constraintStart_toEndOf="@+id/checkradio"
+        app:layout_constraintTop_toTopOf="@+id/checkradio"
+        tools:text="@string/check_amigo" />
+
+    <CheckBox
+        android:id="@+id/checkpublicidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/check_publicidad"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/checkinternet"
+        app:layout_constraintStart_toStartOf="@+id/checkamigo"
+        app:layout_constraintTop_toBottomOf="@+id/checkamigo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:drawableLeft="@android:drawable/ic_menu_send"
+        android:text="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nomape"
+        app:layout_constraintEnd_toStartOf="@+id/nomape"
+        app:layout_constraintTop_toTopOf="@+id/nomape"
+        app:srcCompat="@drawable/base_de_datos" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fechanaci"
+        app:layout_constraintEnd_toStartOf="@+id/fechanaci"
+        app:layout_constraintTop_toTopOf="@+id/fechanaci"
+        app:srcCompat="@drawable/calendario" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/carrera"
+        app:layout_constraintEnd_toStartOf="@+id/carrera"
+        app:layout_constraintTop_toTopOf="@+id/carrera"
+        app:srcCompat="@drawable/correr" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/clave"
+        app:layout_constraintEnd_toStartOf="@+id/clave"
+        app:layout_constraintTop_toTopOf="@+id/clave"
+        app:srcCompat="@drawable/llave" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pregunta"
+        app:layout_constraintEnd_toStartOf="@+id/pregunta"
+        app:layout_constraintTop_toTopOf="@+id/pregunta"
+        app:srcCompat="@drawable/mensajes" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/correo"
+        app:layout_constraintEnd_toStartOf="@+id/correo"
+        app:layout_constraintTop_toTopOf="@+id/correo"
+        app:srcCompat="@drawable/sobre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

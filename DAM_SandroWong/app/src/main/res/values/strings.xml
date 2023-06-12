@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DAM_SandroWong</string>
+    <string name="titulo">Examen de Admisión Untels 2023-I</string>
+    <string name="nom_ape">Apellidos y Nombres:</string>
+    <string name="correo_e">Correo Electrónico</string>
+    <string name="correo_el">Correo Electrónico:</string>
+    <string name="clave_e">Clave:</string>
+    <string name="fecha_naci">Fecha de Nacimiento:</string>
+    <string name="carrera_e">Carrera:</string>
+    <string name="pregunta_e">¿Por qué medio se enteró de la convocatoria?</string>
+    <string name="text_nomape" />
+    <string name="text_correo" />
+    <string name="text_clave" />
+    <string name="text_fecha" />
+    <string name="radio_SI">Ingeniería de Sistemas</string>
+    <string name="radio_IA">Ingeniería Ambiental</string>
+    <string name="radio_IM">Ingeniería Mecánica</string>
+    <string name="radio_AD">Administración</string>
+    <string name="check_radio">Radio</string>
+    <string name="check_amigo">Amigo</string>
+    <string name="check_internet">Internet</string>
+    <string name="check_publicidad">Publicidad</string>
+    <string name="button">Enviar</string>
+    <string name="tituloo">Examen de Amisión Untels 2023-I</string>
+</resources>
